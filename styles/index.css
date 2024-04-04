@@ -1,0 +1,41 @@
+.carousel-inner .carousel-item{
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-inner .carousel-item img{
+    object-position: center;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.carousel-item .con {
+    text-align: center; /* Center text horizontally */
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 50%;
+}
+
+.carousel-item .con div{
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.carousel-item .con button{
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 20px 5px 20px;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+.carousel-item .con button:hover{
+    background: white;
+    color: rgb(55, 55, 55);
+}
