@@ -1,12 +1,17 @@
 /* Your CSS styles */
 nav {
-    padding: 0 14px 0 14px;
+    padding: 0 20px 0 20px;
     height: 80px;
     background: #011425;
     border-bottom: 1px solid rgb(93, 93, 93);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
   }
 
   nav .left a, nav .mid a{
@@ -73,7 +78,7 @@ nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 12px 0 12px;
+      padding: 0 20px 0 20px;
       height: 80px;
     }
 
@@ -82,5 +87,29 @@ nav {
     nav .right {
       display: flex;
       align-items: center;
+    }
+
+    nav .right .login{
+      display: block;
+      cursor: pointer;
+    }
+
+    #bar{
+      display: none;
+    }
+
+    nav .left{
+      height: max-content;
+      position: static;
+      line-height: 20px;
+      gap: 20px;
+    }
+
+    nav .left .login{
+      display: none;
+    }
+
+    nav .left i{
+      display: block;
     }
   }
