@@ -286,6 +286,10 @@
         font-weight: 300;
         line-height: 35px;
     }
+
+    .con-solo .context h1{
+        font-size: 34px;
+    }
 }
 
 @media (min-width: 900px) {
