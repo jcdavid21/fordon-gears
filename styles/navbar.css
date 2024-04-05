@@ -112,4 +112,8 @@ nav {
     nav .left i{
       display: block;
     }
+
+    nav .mid{
+      margin-left: -100px;
+    }
   }
