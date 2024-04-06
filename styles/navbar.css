@@ -20,7 +20,7 @@ nav {
   }
 
   nav .mid a{
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
   }
@@ -73,6 +73,10 @@ nav {
     background: #0d2539;
   }
 
+  nav .left div{
+    border: 1px solid #011425;
+  }
+
   @media (min-width: 768px) {
     nav {
       display: flex;
@@ -105,6 +109,11 @@ nav {
       gap: 20px;
     }
 
+    nav .left a:hover div {
+      background: none;
+      border-bottom: 1px solid lightgray;
+    }
+
     nav .left .login{
       display: none;
     }
@@ -115,5 +124,11 @@ nav {
 
     nav .mid{
       margin-left: -100px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    nav .mid{
+      margin-left: -150px;
     }
   }
