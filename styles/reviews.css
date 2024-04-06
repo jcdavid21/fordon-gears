@@ -81,6 +81,12 @@ main .con-col-grid .con-solo .name{
 
     main .con-col-grid .con-solo .img-con{
         display: block;
+        height: 450px;
+    }
+
+    main .con-col-grid .con-solo .img-con img{
+        object-fit: cover;
+        object-position: center;
     }
 
     main .con-col-grid .con-solo .context{
