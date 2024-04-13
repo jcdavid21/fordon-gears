@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="../styles/co_nav.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/shipping.css">
+    <link rel="icon" href="../imgs/cars/logo.png">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a href="./authentication.html">
+                <div class="flex">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <div>Back</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="mid"><a href="../index.html">
+            Fordon Gears
+        </a></div>
+
+        <div class="right"><a href="../index.html">Home</a></div>
+    </nav>
+
+    <main>
+        <div class="center">
+            <div class="con">
+                <div class="header">
+                    <h1>CHECK OUT</h1>
+                    <div class="flex">
+                        <div class="con-flex">
+                            <div class="num">1</div>
+                            <div class="title">Authentication</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="con-flex">
+                            <div class="num">2</div>
+                            <div class="title">Shipping</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="con-flex">
+                            <div class="num">3</div>
+                            <div class="title">Payment & Review</div>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="./payment.html">
+                    <div class="flex">
+                        <div class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="con-form">
+                            <div class="title">Personal Info</div>
+                            <input type="email" placeholder="E-mail Address*" required>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="con-form">
+                            <div class="title">Shipping Address</div>
+                            <div class="flex-input-con">
+                                <div class="flex-input">
+                                    <input type="text" placeholder="First Name*" required>
+                                    <input type="text" placeholder="Last Name*" required>
+                                </div>
+                                <input type="text" placeholder="Address*" required>
+                                <div class="flex-input">
+                                    <input type="text" placeholder="City*" required>
+                                    <input type="text" id="zipcode" placeholder="Zipcode/Postal Code*" required>
+                                </div>
+                                <div class="flex-input">
+                                    <input type="text" placeholder="Country*" required>
+                                    <input type="text" placeholder="State/Province/Region*" required>
+                                </div>
+                                <div class="flex-input">
+                                    <input type="text" id="phone" placeholder="Phone*" required>
+                                    <div>SHIP TO THIS ADDRESS</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div>
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <div class="con-form">
+                            <div class="title">Choose the shipping method</div>
+                            <div class="center">
+                                <div class="flex-del">
+                                    <button class="con-del" type="submit">
+                                        <div>FEDEX Economoy</div>
+                                        <div>$60.00</div>
+                                    </button>
+    
+                                    <button class="con-del" type="submit">
+                                        <div>Pick up at the nearest branch</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="img-con">
+          <img src="../imgs/cars/logo.png" alt="">
+        </div>
+        <div class="footer-title">Fordon Gears</div>
+        <div class="footer-flex">
+          <div><a href="./contactUs.html">Contact</a></div>
+          <div><a href="./faqs.html">FAQs</a></div>
+          <div><a href="./privacyPolicy.html">Privacy Policy</a></div>
+          <div><a href="./terms.html">Terms & Condition</a></div>
+          <div><a href="./aboutUs.html">About Us</a></div>
+          <div><a href="./reviews.html">Reviews</a></div>
+        </div>
+        <div class="soc-flex">
+          <div style="font-size: 14px;">©Fordon Gears 2024</div>
+          <div class="soc-media-con">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+          </div>
+        </div>
+    </footer>
+
+
+    <script>
+        var zipcodeInput = document.getElementById('zipcode');
+        zipcodeInput.addEventListener('input', function(event) {
+            var input = event.target.value;
+            var numericInput = input.replace(/\D/g, '');
+            event.target.value = numericInput;
+        });
+
+        var phoneInput = document.getElementById('phone');
+        phoneInput.addEventListener('input', function(event) {
+            var input = event.target.value;
+            var numericInput = input.replace(/\D/g, '');
+            event.target.value = numericInput;
+        });
+    </script>
+</body>
+</html>

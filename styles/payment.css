@@ -1,0 +1,254 @@
+.header .flex .con-flex:nth-child(5) .num{
+    background: #011425;
+    color: white;
+    border: none;
+    width: 24px;
+}
+
+main{
+    margin-bottom: 100px;
+}
+
+.form-div form
+{
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid lightslategray;
+    border-radius: 4px;
+}
+
+.form-div form input
+{
+    width: 100%;
+    border: 1px solid rgb(44, 44, 44);
+    padding: 6px 8px 6px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+.form-div form label{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.form-div form label span{
+    color: red;
+}
+
+.form-div form .card-info-div
+{
+    margin-top: 16px;
+}
+
+.form-div form .card-info-div input{
+    margin: 0;
+}
+
+#card-num{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-div form .card-info-div .flex-input .no-border
+{
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-div form .card-info-div .flex-input .no-border:nth-child(1){
+    border-bottom-right-radius: 0;
+    border-right: none;
+}
+
+.form-div form .card-info-div .flex-input .no-border:nth-child(2){
+    border-bottom-left-radius: 0;
+}
+
+.form-div form .card-info-div .flex-input{
+    display: flex;
+}
+
+form{
+    max-width: 1200px;
+    margin-bottom: 30px;
+    height: max-content;
+}
+
+.center .header
+{
+    max-width: 900px;
+    width: 100%;
+}
+
+main .center .con{
+    max-width: 1300px;
+}
+
+.cart-con h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #011425;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightslategray;
+}
+
+.cart-con .order-con .img-con{
+    max-width: 300px;
+}
+
+.cart-con .order-con{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 20px;
+    row-gap: 30px;
+    margin-bottom: 40px;
+}
+
+.cart-con .order-con .order-name{
+    font-size: 14px;
+
+}
+
+.cart-con .order-con .order-name span{
+    height: 12px;
+    width: 12px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.cart-con .order-con .order-name .color{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 300;
+}
+
+.cart-con .order-con .order-name .name{
+    background: #022748;
+    color: white;
+    padding: 3px 12px 3px 12px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+
+.cart-con .order-con .price-con{
+    font-size: 14px;
+}
+
+.cart-con .order-con .price-con .qnty{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightslategray;
+    border-radius: 4px;
+    padding: 3px 6px 3px 6px;
+    font-size: 12px;
+    width: max-content;
+}
+
+.cart-con .order-con .price-con .qnty input{
+    width: 40px;
+    padding: 0 6px 0 6px;
+    border: none;
+}
+
+.cart-con .order-con .price-con .flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.cart-con .order-con .price-con .flex i{
+    font-size: 16px;
+    color: rgb(185, 6, 6);
+    cursor: pointer;
+}
+
+.cart-con{
+    margin-top: 40px;
+    border: 1px solid lightslategray;
+    border-radius: 4px;
+}
+
+
+.cart-con .order-con{
+    padding: 0 20px 0 20px;
+}
+
+.cart-con .summary-con{
+    padding: 20px;
+    border-top: 1px solid lightslategray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-con .summary-con .sum-con{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.cart-con .summary-con .out-div
+{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.cart-con .summary-con .out-div button
+{
+    background: transparent;
+    color: rgb(55, 55, 55);
+    border-radius: none;
+    font-weight: 500;
+    font-size: 13px;
+    border: 1px solid rgb(110, 110, 110);
+    padding: 4px 24px 4px 24px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.cart-con .summary-con .out-div button:hover{
+    background: #022748;
+    color: white;
+}
+
+@media (min-width: 900px) {
+    main .con .form-div{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 30px;
+    }
+
+    main .con .form-div form{
+        max-width: 400px;
+        width: 100%;
+    }
+    main .con .form-div .cart-con{
+        flex: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .cart-con .order-con{
+        display: flex;
+        justify-content: start;
+    }
+
+
+    .cart-con .order-con .flex-con{
+        display: flex;
+        justify-content: end;
+        flex: 1;
+    }
+}

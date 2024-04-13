@@ -14,7 +14,7 @@ nav {
     z-index: 1000;
   }
 
-  nav .left a, nav .mid a{
+  nav .left a, nav .mid a, nav .right a{
     text-decoration: none;
     color: white;
   }
@@ -68,12 +68,16 @@ nav {
     display: none;
   }
 
+  nav .mid{
+    margin-left: 40px;
+  }
 
-  nav .left a:hover div {
+
+  nav .left a:hover div{
     background: #0d2539;
   }
 
-  nav .left div{
+  nav .left div, nav .right a{
     border: 1px solid #011425;
   }
 
@@ -109,7 +113,7 @@ nav {
       gap: 20px;
     }
 
-    nav .left a:hover div {
+    nav .left a:hover div, nav .right a:hover{
       background: none;
       border-bottom: 1px solid lightgray;
     }

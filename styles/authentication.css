@@ -1,0 +1,85 @@
+
+main{
+    margin-bottom: 100px;
+}
+
+.con-log{
+    border: 1px solid lightslategray;
+    margin-top: 100px;
+    padding: 20px 30px 20px 30px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.con-log h1{
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #032038;
+}
+
+.con-log form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.con-log form input{
+    width: 100%;
+    padding: 8px 4px 8px 4px;
+    border: none;
+    border-bottom: 1px solid rgb(36, 36, 36);
+}
+
+.con-log form .desc{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.con-log form button
+{
+    background: #032038;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.con-log form button:hover{
+    background: #063a65;
+}
+
+.con-log form .forgot-pass a{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.con-log form .forgot-pass{
+    border: 1px solid transparent;
+    width: max-content;
+    transition: 0.3s ease;
+}
+
+.con-log form .forgot-pass:hover{
+    border-bottom: 1px solid #011425;
+}
+
+.con-log .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .flex .con-flex:nth-child(1) .num{
+    background: #011425;
+    color: white;
+    border: none;
+    width: 24px;
+}

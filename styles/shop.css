@@ -1,0 +1,108 @@
+body{
+    margin-top: 120px;
+}
+
+main .header h1
+{
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .header .con{
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 13px;
+    gap: 12px;
+    padding: 30px 30px;
+}
+
+main .motor-con{
+    margin-bottom: 40px;
+}
+
+main .motor-con .title
+{
+    text-align: center;
+    background: #011425;
+    color: white;
+    padding: 12px 10px;
+    letter-spacing: 1px;
+}
+
+main .motor-con .thumb-con{
+    padding: 20px 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+main .motor-con .con
+{
+    max-width: 1400px;
+    width: 100%;
+}
+
+main .motor-con .thumb-con .thumb{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+
+main .motor-con .thumb-con .thumb .img-con img{
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(70%);
+    transition: 0.5s ease;
+}
+
+main .motor-con .thumb-con .thumb:hover .img-con img{
+    transform: scale(120%);
+}
+
+main .motor-con .thumb-con .thumb .img-con{
+    height: 200px;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+main .motor-con .thumb-con .thumb .text{
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(227, 227, 227, 0.43);
+}
+
+@media (min-width: 768px) {
+    main .motor-con .thumb-con .thumb .img-con{
+        height: 300px;
+    }
+    main .motor-con .thumb-con .thumb .text{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 968px) {
+    main .motor-con .thumb-con .thumb .text{
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,140 @@
+body{
+    margin-top: 120px;
+    height: 100vh;
+}
+
+nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: white;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px 0 12px;
+
+    box-shadow: 0px 7px 5px -1px rgba(0,0,0,0.32);
+-webkit-box-shadow: 0px 7px 5px -1px rgba(0,0,0,0.32);
+-moz-box-shadow: 0px 7px 5px -1px rgba(0,0,0,0.32);
+}
+
+nav .mid a{
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+nav .left div{
+    display: none;
+}
+
+nav .left .flex{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+nav .left i{
+    color: #011425;
+    font-size: 20px;
+}
+
+nav .mid a, nav .right a,
+.con-log form .forgot-pass a,
+nav .left a{
+    text-decoration: none;
+    color: #011425;
+}
+
+nav .right, nav .left .flex div{
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav .right, nav .left .flex div{
+    border: 1px solid transparent;
+}
+
+nav .right:hover, nav .left:hover .flex div:hover{
+    border-bottom: 1px solid #011425;
+}
+
+
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center .con{
+    max-width: 900px;
+    width: 100%;
+    padding: 0 30px 0 30px;
+}
+
+.header h1{
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.header .flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .flex .con-flex
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.header .flex .con-flex .num{
+    border: 1px solid rgb(134, 134, 134);
+    border-radius: 50px;
+    width: 26px;
+    padding: 2px 0 2px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.header .flex .con-flex .title{
+    font-size: 11px;
+    font-weight: 300;
+    white-space: nowrap;
+}
+.header .flex .line{
+    border-top: 1px solid #011425;
+    border-bottom: 1px solid #011425;
+    width: 100%;
+    margin-bottom: 17px;
+}
+
+
+@media (min-width: 768px) {
+    nav .left div{
+        display: block;
+        font-weight: 500;
+    }
+
+    nav .mid{
+        margin-left: -50px;
+    }
+
+    nav{
+        padding: 0 30px 0 30px;
+    }
+}
+
+
