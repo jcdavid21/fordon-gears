@@ -8,6 +8,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     position: fixed;
+
+    overflow: hidden;
     top: 0;
     left: 0;
     right: 0;
@@ -110,6 +112,7 @@ nav {
       height: max-content;
       position: static;
       line-height: 20px;
+      overflow: visible;
       gap: 20px;
     }
 

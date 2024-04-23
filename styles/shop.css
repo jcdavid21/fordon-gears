@@ -25,6 +25,11 @@ main .header .con{
     padding: 30px 30px;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
 main .motor-con{
     margin-bottom: 40px;
 }
