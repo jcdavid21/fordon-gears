@@ -5,6 +5,13 @@
     justify-content: center;
 }
 
+.center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
 
 .con-relative .img-con{
     height: 350px;
@@ -81,7 +88,8 @@ main .con-col-grid .con-solo .name{
 
     main .con-col-grid .con-solo .img-con{
         display: block;
-        height: 450px;
+        height: 350px;
+        width: 500px;
     }
 
     main .con-col-grid .con-solo .img-con img{
@@ -90,7 +98,7 @@ main .con-col-grid .con-solo .name{
     }
 
     main .con-col-grid .con-solo .context{
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 200;
         line-height: 35px;
         letter-spacing: 1.5px;

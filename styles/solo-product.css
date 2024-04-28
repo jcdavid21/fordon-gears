@@ -1,0 +1,322 @@
+body{
+    height: 100vh;
+    background: #011425;  
+}
+main{
+    padding-top: 100;
+    position: relative;
+}
+
+main .con{
+    padding: 120px 20px 30px 20px;
+    color: white;
+    max-width: 1400px;
+}
+
+main .con .title-con{
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+main .con .title-con .title{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+main .con .title-con .price{
+    color: rgb(206, 206, 206);
+}
+
+
+
+main .con .img-con .rel{
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+
+main .con .img-con .abs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: 0.7s ease;
+    opacity: 0;
+    background: white;
+}
+
+
+main .con .img-con .rel:hover .abs{
+    right: 0;
+    opacity: 1;
+}
+
+main .con .img-con .rel:hover .img-1{
+    opacity: 0;
+}
+
+main .con .flex .img-con img{
+    object-fit: cover;
+}
+
+main .con .flex .img-con{
+    /* display: flex;
+    flex-direction: column;
+    gap: 50px; */
+    margin-bottom: 20px;
+    background: white;
+}
+
+
+main .con .flex .context li{
+    line-height: 32px;
+    font-size: 14px;
+}
+
+main .con .flex .context p{
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+main .con .flex .container .center .color{
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+main .con .flex .container .center .color-div{
+    display: flex;
+    gap: 4px;
+}
+
+main .con .flex .container .center{
+    display: flex;
+    flex-direction: column;
+}
+
+main .con .flex .container .center  .con-btn button{
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: rgb(233, 233, 233);
+    padding: 4px 32px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+main .con .flex .container .center  .con-btn button:hover{
+    background: #0e3253;
+}
+
+main .con .flex .container .center
+.color:nth-child(1){
+    background-color: black;
+}
+
+main .con .flex .container .center
+.color:nth-child(2){
+    background-color: rgb(137, 38, 137);
+}
+
+main .con .flex .container .center
+.color:nth-child(3){
+    background-color: red;
+}
+
+main .con .flex .container .center
+.color:nth-child(4){
+    background-color: white;
+}
+
+
+main .con .flex .container .add-cart-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+main .con .flex .container .add-cart-con .qnt-con{
+    border: 1px solid white;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: rgb(186, 186, 186);
+    justify-content: center;
+}
+
+
+main .con .flex .container .add-cart-con .qnt-con input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(141, 141, 141, 0.5);
+    color: white;
+    padding-left: 6px;
+    width: 50px;
+}
+
+main .con .flex .container .add-cart-btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+main .con .flex .container .add-cart-btn button
+{
+    padding: 6px 60px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid white;
+    color: rgb(233, 233, 233);
+    cursor: pointer;
+}
+main .con .flex .container .add-cart-btn button:hover{
+    border: 1px solid white;
+    background: #0e3253;
+    border-radius: 50px;
+}
+
+main .like-con{
+    color: rgb(55, 55, 55);
+    background: white;
+    padding: 20px;
+}
+
+main .like-con h1{
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main .like-con .flex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+main .like-con .flex a{
+    text-decoration: none;
+    color: rgb(55, 55, 55);
+}
+
+main .like-con .flex .con-prod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+main .like-con .flex .con-prod .context{
+    text-align: center;
+}
+
+main .like-con .flex .con-prod .img-con{
+    border: 1px solid lightgray;
+    cursor: pointer;
+    height: 200px;
+    max-width: 400px;
+}
+
+main .like-con .flex .con-prod .img-con img{
+    object-fit: contain;
+}
+
+main .like-con .flex .con-prod .name{
+    font-weight: 500;
+}
+
+.con-view{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con-view button{
+    background: transparent;
+    border: 1px solid black;
+    padding: 8px 26px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.con-view button:hover{
+    border: 1px solid transparent;
+    background: #143755;
+    color: white;
+}
+
+.ribbon {
+    font-size: 12px;
+    font-weight: 500;
+    color: #143755;
+}
+.ribbon {
+    --f: .5em; /* control the folded part*/
+    --r: .8em; /* control the ribbon shape */
+    
+    position: absolute;
+    top: 40px;
+    left: calc(-1*var(--f));
+    padding-inline: .25em;
+    padding: 6px 30px;
+    line-height: 1.8;
+    background: rgb(240, 240, 240);
+    border-bottom: var(--f) solid #0005;
+    border-right: var(--r) solid #0000;
+    clip-path: 
+        polygon(0 0,0 calc(100% - var(--f)),var(--f) 100%,
+        var(--f) calc(100% - var(--f)),100% calc(100% - var(--f)),
+        calc(100% - var(--r)) calc(50% - var(--f)/2),100% 0);
+}
+
+@media (min-width: 768px) {
+    main .con .flex{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        gap: 40px;
+    }
+
+    main .con .flex .context ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+
+    main .con .img-con .rel{
+        height: 400px;
+        overflow: hidden;
+    }
+
+    main .like-con .flex{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    main .like-con .flex .con-prod .img-con{
+        height: 300px;
+    }
+
+    main .con .title-con .title{
+        font-size: 32px;
+    }
+
+    main .con .flex .context p{
+        line-height: 32px;
+        font-size: 17px;
+    }
+}

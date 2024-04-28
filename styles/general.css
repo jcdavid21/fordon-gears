@@ -4,9 +4,14 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     margin: 0;
+    transition: 0.3s ease;
 }
 
 img{
     height: 100%;
     width: 100%;
+}
+
+a{
+    text-decoration: none;
 }
