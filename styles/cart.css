@@ -1,0 +1,242 @@
+
+main
+{
+    color: white;
+    background: #011425;
+    padding-top: 120px;
+    height: 100%;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .header h1{
+    text-align: center;
+    font-weight: 500;
+}
+
+main .header .con{
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 13px;
+    gap: 12px;
+    padding: 30px 30px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.flex-con .bottom{
+    padding: 30px;
+    border-bottom: 1px solid white;
+}
+
+.con-item .con-first{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 30px;
+}
+
+.con-item .con-first .img-con{
+    max-height: 200px;
+    width: 100%;
+    background: white;
+}
+
+.con-item .con-first .context{
+    line-height: 30px;
+}
+
+
+.flex-con .grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px   ;
+    margin-top: 20px;
+}
+
+.flex-con .grid .qnty{
+    display: flex;
+    gap: 10px;
+}
+
+.del, .minus, .plus, .price, .input{
+    width: max-content;
+    padding: 4px 16px;
+}
+
+.input{
+    width: 40px;
+}
+
+.del:hover, .minus:hover, .plus:hover{
+    background: #042a4b;
+    cursor: pointer;
+}
+
+.minus, .plus{
+    cursor: pointer;
+}
+
+.sub-total{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 30px;
+}
+
+.sub-total .total-price{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.flex-total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    gap: 14px;
+}
+
+.check{
+    width: 100%;
+}
+
+.check button
+{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 24px;
+    width: 100%;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+.check button:hover{
+    background: #042a4b;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+img{
+    object-fit: cover;
+}
+
+.flex-con .con{
+    max-width: 1400px;
+    width: 100%;
+}
+
+
+main .like-con{
+    color: rgb(55, 55, 55);
+    background: white;
+    padding: 20px;
+}
+
+main .like-con h1{
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main .like-con .flex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+main .like-con .flex a{
+    text-decoration: none;
+    color: rgb(55, 55, 55);
+}
+
+main .like-con .flex .con-prod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+main .like-con .flex .con-prod .context{
+    text-align: center;
+}
+
+main .like-con .flex .con-prod .img-con{
+    border: 1px solid lightgray;
+    cursor: pointer;
+    height: 200px;
+    max-width: 400px;
+}
+
+main .like-con .flex .con-prod .img-con img{
+    object-fit: cover;
+}
+
+main .like-con .flex .con-prod .name{
+    font-weight: 500;
+}
+
+
+.con-view{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con-view button{
+    background: transparent;
+    border: 1px solid black;
+    padding: 8px 26px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.con-view button:hover{
+    border: 1px solid transparent;
+    background: #143755;
+    color: white;
+}
+
+
+
+@media (min-width: 768px) {
+    .flex-con .con-item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .flex-con .grid{
+        margin-top: 0;
+    }
+
+    .con-item .con-first{
+        grid-template-columns: 350px 1fr;
+    }
+    .con-item .con-first .img-con{
+        max-height: 300px;
+    }
+
+    main .like-con .flex{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    main .like-con .flex .con-prod .img-con{
+        height: 300px;
+        width: 100%;
+    }
+}
