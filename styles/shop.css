@@ -2,6 +2,10 @@ body{
     margin-top: 120px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 main .header h1
 {
     text-align: center;
@@ -28,6 +32,10 @@ main .header .con{
 a{
     color: white;
     text-decoration: none;
+}
+
+.header .center  .con a{
+    color: black;
 }
 
 main .motor-con{

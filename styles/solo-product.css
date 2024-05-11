@@ -254,6 +254,18 @@ main .like-con .flex .con-prod .name{
     cursor: pointer;
 }
 
+.like-con .con-prod .img-con{
+    overflow: hidden;
+}
+
+.like-con .con-prod .img-con img{
+    transition: 0.3s ease;
+}
+
+.like-con .con-prod .img-con img:hover{
+    transform: scale(120%);
+}
+
 .con-view button:hover{
     border: 1px solid transparent;
     background: #143755;

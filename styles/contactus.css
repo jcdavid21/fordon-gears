@@ -133,6 +133,20 @@ form button:hover{
     background: #012e57;
 }
 
+
+.soc-media{
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    padding: 10px;
+    font-size: 24px;
+}
+
+.soc-media a{
+    text-decoration: none;
+    color: black;
+}
+
 @media (min-width: 900px) {
     .con-relative .img-con{
         height: 500px;
